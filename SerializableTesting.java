@@ -8,12 +8,13 @@ public class SerializableTesting {
 	@Test
 	public void testSerial() {
 		try {
-		Game g=new Game(100,"snil");
+		Game g;
+		g=new Game(100,"sunil_kumar");
 		
-		assertTrue(g.get_check("snil")<(int)(0.25*100));
+		assertTrue(g.get_check("sunil_kumar")<(int)(0.25*100));
 		}
 		catch(Exception e) {
-			System.out.println("some exception happens");
+			System.out.println("all exception comes insed this parent exception");
 		}
 		
 	}
