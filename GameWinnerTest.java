@@ -8,7 +8,8 @@ public class GameWinnerTest {
 	@Test(expected = GameWinnerException.class)
 	public void testGameWin()throws IOException ,ClassNotFoundException,NoExtraTiles,GameWinnerException{
 			Tile[] arr=new Tile[100];
-			Player p=new Player(100, "sunil", arr);
+			Player p;
+			p = new Player(100, "sunil_kumar", arr);
 			p.setTile(100);
 			p.play();
 			
